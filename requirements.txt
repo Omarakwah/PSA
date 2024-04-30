@@ -1,0 +1,7 @@
+langchain
+openai beautifulsoup4
+urllib3
+-U unstructured
+langchain-google-genai
+gradio
+-U duckduckgo-search
