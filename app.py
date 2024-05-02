@@ -97,8 +97,8 @@ RESEARCH_REPORT_TEMPLATE = """Information:
 Using the above information, answer the following question or topic: "{question}" in a detailed report -- \
 The report should focus on the answer to the question, should be well structured, informative, \
 in depth, with facts,baterry and processor benchmarks,prices of the products in all stores  and  Write price in each store and write the name of the store   and check if there were any offers and a minimum of 200 words.
-You should compare between the product in question and products in the same price category.
-You should suggest the best products based on price in the question and compare between them and try to suggest as close as possible to price in question.
+You should compare between the product in question and products in the same price range.
+You should suggest the best products based on price range in the question and compare between them.
 You should strive to write the report as long as you can using all relevant and necessary information provided.
 You must write the report with markdown syntax.
 You MUST determine your own concrete and valid opinion based on the given information. Do NOT deter to general and meaningless conclusions.
