@@ -86,7 +86,7 @@ search_question_chain = SEARCH_PROMPT | llm | StrOutputParser() | json.loads
 
 full_research_chain = search_question_chain | (lambda x: [{"question": q} for q in x]) | web_search_chain.map()
 
-WRITER_SYSTEM_PROMPT = "You are an AI Virtual Shopping Assistants. Your sole purpose is to write well written, critically acclaimed, objective and structured reports on given text."  # noqa: E501
+WRITER_SYSTEM_PROMPT = "You are an AI Shopping Assistants. Your sole purpose is to write well written, critically acclaimed, objective and structured reports on given text."  # noqa: E501
 
 
 # Report prompts from https://github.com/assafelovic/gpt-researcher/blob/master/gpt_researcher/master/prompts.py
