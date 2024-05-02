@@ -128,4 +128,4 @@ def predict(input, history):
   return str(response)
 
 
-gr.ChatInterface(predict).launch(share=True)
+gr.ChatInterface(predict,description="These assistants could help customers find products, compare options,answer questions and recommend the best product based on customer needs.").launch(share=True)
