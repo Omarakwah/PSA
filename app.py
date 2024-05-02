@@ -126,4 +126,4 @@ def predict(input, history):
   return str(response)
 
 
-gr.ChatInterface(predict).launch()
+gr.ChatInterface(predict).launch(share=True)
