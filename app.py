@@ -17,7 +17,8 @@ import gradio as gr
 from langchain_community.utilities import GoogleSearchAPIWrapper
 from langchain_core.tools import Tool
 from huggingface_hub import HfApi
-
+from dotenv import load_dotenv, find_dotenv
+_ = load_dotenv(find_dotenv())
 
 sys.path.append('../..')
 
