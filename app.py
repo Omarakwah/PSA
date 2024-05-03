@@ -23,11 +23,11 @@ _ = load_dotenv(find_dotenv())
 sys.path.append('../..')
 
 
-openai.api_key  = os.environ["OPENAI_API_KEY"]
-api_key=os.environ["api_key"]
-llm = GoogleGenerativeAI(model="gemini-pro", google_api_key=api_key)
-google_api=os.environ["GOOGLE_API_KEY"] 
-CS_API= os.environ["GOOGLE_CSE_ID"] 
+os.environ["OPENAI_API_KEY"]='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'
+openai.api_key  = os.environ["OPENAI_API_KEY"] 
+api_key='AIzaSyBF6zRq5KbOoP6CohVKR8791nqp2yefuVU'
+os.environ["GOOGLE_API_KEY"]="AIzaSyBCiV0OJNpKYh4YDsfVD0zeVLCvc0JWQSo" 
+os.environ["GOOGLE_CSE_ID"]="a64e58dbd396042ed" 
 
 
 RESULTS_PER_QUESTION = 3
