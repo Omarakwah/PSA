@@ -6,3 +6,4 @@ unstructured
 langchain-google-genai
 gradio
 duckduckgo-search
+python-dotenv
