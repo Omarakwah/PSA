@@ -22,11 +22,11 @@ from huggingface_hub import HfApi
 sys.path.append('../..')
 
 
-openai.api_key  = os.environ.get("OPENAI_API_KEY")
-api_key=os.environ.get("api_key")
+openai.api_key  = os.environ["OPENAI_API_KEY"]
+api_key=os.environ["api_key"]
 llm = GoogleGenerativeAI(model="gemini-pro", google_api_key=api_key)
-google_api=os.environ.get("GOOGLE_API_KEY") 
-CS_API= os.environ.get("GOOGLE_CSE_ID")  
+google_api=os.environ["GOOGLE_API_KEY"] 
+CS_API= os.environ["GOOGLE_CSE_ID"] 
 
 
 RESULTS_PER_QUESTION = 3
