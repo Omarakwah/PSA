@@ -17,16 +17,16 @@ import gradio as gr
 from langchain_community.utilities import GoogleSearchAPIWrapper
 from langchain_core.tools import Tool
 from huggingface_hub import HfApi
-api = HfApi()
+
 
 sys.path.append('../..')
 
 
-openai.api_key  = api.vault.get["OPENAI_API_KEY"]
-api_key=api.vault.get["api_key"]
+openai.api_key  = os.getenv["OPENAI_API_KEY"]
+api_key=os.getenv["api_key"]
 llm = GoogleGenerativeAI(model="gemini-pro", google_api_key=api_key)
-google_api=api.vault.get["GOOGLE_API_KEY"] 
-CS_API= api.vault.get["GOOGLE_CSE_ID"] 
+google_api=os.getenv["GOOGLE_API_KEY"] 
+CS_API= os.getenv["GOOGLE_CSE_ID"] 
 
 
 RESULTS_PER_QUESTION = 3
