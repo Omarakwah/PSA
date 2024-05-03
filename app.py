@@ -28,6 +28,7 @@ openai.api_key  = os.environ["OPENAI_API_KEY"]
 api_key='AIzaSyBF6zRq5KbOoP6CohVKR8791nqp2yefuVU'
 os.environ["GOOGLE_API_KEY"]="AIzaSyBCiV0OJNpKYh4YDsfVD0zeVLCvc0JWQSo" 
 os.environ["GOOGLE_CSE_ID"]="a64e58dbd396042ed" 
+llm = GoogleGenerativeAI(model="gemini-pro", google_api_key=api_key)
 
 
 RESULTS_PER_QUESTION = 3
