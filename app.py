@@ -23,7 +23,7 @@ _ = load_dotenv(find_dotenv())
 sys.path.append('../..')
 
 
-os.environ["OPENAI_API_KEY"]='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'
+os.environ["OPENAI_API_KEY"]='sk-proj-ukx0nfRmfiOHojgJAvsBT3BlbkFJhYsVcTGHeqtTdCYXZvUD'
 openai.api_key  = os.environ["OPENAI_API_KEY"] 
 api_key='AIzaSyBF6zRq5KbOoP6CohVKR8791nqp2yefuVU'
 os.environ["GOOGLE_API_KEY"]="AIzaSyBCiV0OJNpKYh4YDsfVD0zeVLCvc0JWQSo" 
