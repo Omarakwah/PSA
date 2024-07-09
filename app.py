@@ -23,11 +23,9 @@ _ = load_dotenv(find_dotenv())
 sys.path.append('../..')
 
 
-os.environ["OPENAI_API_KEY"]='sk-proj-ukx0nfRmfiOHojgJAvsBT3BlbkFJhYsVcTGHeqtTdCYXZvUD'
+
 openai.api_key  = os.environ["OPENAI_API_KEY"] 
-api_key='AIzaSyAK26dJHr6PtqjxYGwb052NgIMMITbii2E'
-os.environ["GOOGLE_API_KEY"]="AIzaSyAK26dJHr6PtqjxYGwb052NgIMMITbii2E" 
-os.environ["GOOGLE_CSE_ID"]="a64e58dbd396042ed" 
+api_key=os.environ["GOOGLE_API_KEY"]
 llm = GoogleGenerativeAI(model="gemini-pro", google_api_key=api_key)
 
 
